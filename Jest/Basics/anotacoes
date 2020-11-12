@@ -1,0 +1,21 @@
+# Start
+  "test": "jest"   - in package.json, test script
+  npm test (execute in terminal)
+
+# Dependencies
+  npm init -y      - install nodepackages, package json  
+  npm i -D jest    - install as dev-dependence Jest
+  npm i axios      - install axios for http request
+
+# Fake API for Tests
+  https://jsonplaceholder.typicode.com
+
+# Jest WatchMode
+    (npm run testwatch)
+ 		"testwatch": "jest --watchAll"    - terminal options for tests
+      - only failed test
+      - run tests related to changed files
+      - by a filename regex pattern
+      - by a test name regex pattern
+      - quit watch WatchMode
+      - trigger a test run

@@ -1,5 +1,35 @@
 const functions = require("./functions");
 
+// beforeEach | afterEach
+// beforeEach(() => initDatabase()); // 'init database' before every task
+// afterEach(() => closeDatabase()); // 'close database' after every task
+
+// beforeAll | afterAll
+// beforeAll(() => initDatabase()); // 'init database' before all tasks (one time)
+// afterAll(() => closeDatabase()); // 'close database' after all tasks (one time)
+
+// const initDatabase = () => console.log("Database Initialized...");
+// const closeDatabase = () => console.log("Database Closed...");
+
+// describe(create a group of tasks)
+describe("Checking Names", () => {
+	beforeEach(() => nameCheck());
+
+	test("User is Jeff", () => {
+		let user = "Jeff";
+		expect(user).toBe("Jeff");
+	});
+
+	test("User is Karen", () => {
+		let user = "Karen";
+		expect(user).toBe("Karen");
+	});
+});
+
+const nameCheck = () => console.log("Checking Name...");
+
+//==============================================================
+
 // test | expect | add | toBe
 test("Adds 2 + 2 to equal 4", () => {
 	expect(functions.add(2, 2)).toBe(4);
@@ -49,7 +79,7 @@ test("Admin should be in usernames", () => {
 //=============================================================
 // async data (expect assertion and return)
 
-// assertions 
+// assertions
 test("User fetched name should be Leanne Graham", () => {
 	expect.assertions(1); // assertions that are called, callbacks promisses
 	return functions.fetchUser().then((data) => {
@@ -57,9 +87,9 @@ test("User fetched name should be Leanne Graham", () => {
 	});
 });
 
-// an Async Await function 
+// an Async Await function
 test("User fetched name should be Leanne Graham", async () => {
-	expect.assertions(1); 
-  const data = await functions.fetchUser();
-  expect(data.name).toEqual('Leanne Graham')
+	expect.assertions(1);
+	const data = await functions.fetchUser();
+	expect(data.name).toEqual("Leanne Graham");
 });
