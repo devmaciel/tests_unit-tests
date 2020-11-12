@@ -12,7 +12,7 @@ const functions = {
 	fetchUser: () =>
 		Axios.get("https://jsonplaceholder.typicode.com/users/1")
 			.then((res) => res.data)
-			.catch((err) => "error"),
+			.catch((err) => console.log(err)),
 };
 
 module.exports = functions;
