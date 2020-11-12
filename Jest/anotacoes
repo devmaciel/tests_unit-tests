@@ -1,0 +1,3 @@
+npm init -y      - install nodepackages, package json  
+npm i -D jest    - install as dev-dependence Jest
+"test": "jest"   - in package.json, test script
