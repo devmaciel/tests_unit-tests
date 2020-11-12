@@ -1,5 +1,11 @@
-npm init -y      - install nodepackages, package json  
-npm i -D jest    - install as dev-dependence Jest
-"test": "jest"   - in package.json, test script
+# Start
+  "test": "jest"   - in package.json, test script
+  npm test (execute in terminal)
 
-npm test (execute in terminal)
+# Dependencies
+  npm init -y      - install nodepackages, package json  
+  npm i -D jest    - install as dev-dependence Jest
+  npm i axios      - install axios for http request
+
+# Fake API for Tests
+  https://jsonplaceholder.typicode.com
