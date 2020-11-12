@@ -1,3 +1,6 @@
+# Jest
+  https://jestjs.io
+  
 # Start
   "test": "jest"   - in package.json, test script
   npm test (execute in terminal)

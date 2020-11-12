@@ -1,0 +1,27 @@
+# Mocha Chai Sinon
+  https://mochajs.org
+  https://www.chaijs.com
+  https://sinonjs.org
+
+# Start
+  npm init -y
+  require nodejs -g
+  npm run test
+
+# Dependencies
+  npm i -D mocha
+  npm i -D chai
+  npm i -D sinon
+  npm i -D chai-as-promised
+  npm i -D nock
+  npm i xmlhttprequest
+  npm i -D nyc
+
+# Package JSON
+  "test": "mocha './specs/*.specs.js'"
+
+  "coverage": "nyc --reporter=lcov --report=text npm run test"
+    "nyc": {
+      "include": "src",
+      "exclude": "specs"
+    },
