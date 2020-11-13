@@ -1,0 +1,12 @@
+# Cypress.io DOCS
+  https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements
+  
+# Start
+  "npm init -y"
+  npm run test
+
+# Dependencies
+  npm i -D cypress
+
+# Package JSON
+  "test": "./node_modules/.bin/cypress open"
